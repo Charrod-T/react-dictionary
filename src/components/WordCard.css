@@ -1,0 +1,9 @@
+.word-card {
+    border: 3px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    display: inline-block;
+    width: 250px;
+}
