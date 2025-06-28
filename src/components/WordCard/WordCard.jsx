@@ -1,10 +1,11 @@
 import React from 'react';
-import './Wordcard.css';
-export default function WordCard({en, de}) {
+import './WordCard.css';
+
+export default function WordCard({front, back}) {
   return (
     <div className="word-card">
-        <p>English: {en}</p>
-        <p>German: {de}</p>
-    </div>
+        <div className="front">English: {front}</div>
+        <div className="back">German: {back}</div>
+  </div>
   )
 }
