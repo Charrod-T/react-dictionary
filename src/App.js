@@ -1,5 +1,5 @@
 import './App.css';
-import WordCard from './components/WordCard/WordCard.jsx';
+import WordCard from './components/WordCard/WordCard';
 
 function App() {
   return (
@@ -10,8 +10,7 @@ function App() {
      <main>
       <WordCard en="translation" de="ubersetzung" />
       <WordCard en="egg" de="ei" />
-
-     </main>
+    </main>
     </div>
   );
 }
