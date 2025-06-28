@@ -12,21 +12,20 @@ function App() {
     {front: 'square', back:'Platz'},
     {front: 'seven', back:'sieben'},
 ]);
-   
+
+const cardList = words.map (word =>
+<WordCard front={words.front} back ={words.back}/>
+); 
+
 
     return (
     <div className="App">
       <header className="App-header">
         Dictionary App
       </header>
+      
      <main className="cards-container">
-      <WordCard front={words[0].front} back ={words[0].back}/>
-      <WordCard front={words[1].front} back ={words[1].back}/>
-      <WordCard front={words[2].front} back ={words[2].back}/>
-      <WordCard front={words[3].front} back ={words[3].back}/>
-      <WordCard front={words[4].front} back ={words[4].back}/>
-      <WordCard front={words[5].front} back ={words[5].back}/>
-
+      {cardList}
     </main>
     </div>
   );
