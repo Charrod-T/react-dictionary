@@ -1,11 +1,10 @@
 import React from 'react'
-import './WordCard.jsx';
 
-export default function WordCard(props) {
+export default function WordCard({en, de}) {
   return (
-    <div className="WordCard">
-        <p>English: {props.en}</p>
-        <p>German: {props.de}</p>
+    <div className="word-card">
+        <p>English: {en}</p>
+        <p>German: {de}</p>
       
     </div>
   )
