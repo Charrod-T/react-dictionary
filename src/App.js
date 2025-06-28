@@ -1,5 +1,5 @@
 import './App.css';
-import WordCard from './components/WordCard/WordCard';
+import WordCard from './components/WordCard/WordCard.jsx';
 
 function App() {
   return (
