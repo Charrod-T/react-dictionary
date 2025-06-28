@@ -1,5 +1,5 @@
 import React from 'react'
-import './WordCard.css';
+import './WordCard.jsx';
 
 export default function WordCard(props) {
   return (
