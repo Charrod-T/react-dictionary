@@ -1,6 +1,7 @@
 import react from 'react';
 import './WordForm.css';
 
+export default function WordForm() {
 return (
     <section className="card-form">
         <h2> New Card</h2>
@@ -8,9 +9,7 @@ return (
           <div className="form-row">
             <label>
               English:
-              <input type="text" 
-              name="en" 
-              placholder="English"/>
+              <input type="text" name="en" placholder="English"/>
             </label>
           </div>
           <div className="form-row">
@@ -24,6 +23,5 @@ return (
           </div>
         </form> 
       </section>
-)
-
-export default WordForm;
+    )
+}

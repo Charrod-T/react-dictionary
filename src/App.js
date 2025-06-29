@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import './App.css';
-import WordCard from './components/WordCard/WordCard';
-import { type } from '@testing-library/user-event/dist/type';
+import './App.css'; 
+import WordForm from './components/Wordform/WordForm';
+import CardsContainer from './components/CardsContainer/CardContainer';
 
 function App() {
   const [words, setWords] = useState([ 
@@ -13,13 +13,6 @@ function App() {
     { front: 'seven', back:'sieben'},
 ]);
 
-const cardList = words.map ( word =>
-<WordCard 
-  front={word.front} 
-  back ={word.back} 
-  key={word.front}/>
-); 
-
 
     return (
     <div className="App">
@@ -28,29 +21,8 @@ const cardList = words.map ( word =>
       </header>
 
      <main>
-      <section className="card-form">
-        <h2> New Card</h2>
-        <form action ="#" method ="GET">
-          <div className="form-row">
-            <label>
-              English:
-              <input type="text" name="en" placholder="English"/>
-            </label>
-          </div>
-          <div className="form-row">
-            <label>
-              German:
-              <input type="text" name="de" placholder="German"/>
-            </label>
-          </div>
-          <div className="form-row">
-            <button type="submit">Add Word</button>
-          </div>
-        </form> 
-      </section>
-      <section className="cards-container">
-      {cardList}
-      </section>
+      <WordForm />
+      <CardsContainer words={words} />
     </main>
     </div>
   );
