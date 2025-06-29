@@ -14,6 +14,12 @@ function App() {
 ]);
 
 
+const addWord =  (front, back) => {
+  const newWords  = [...words, {front, back}];
+  setWords(newWords);
+}
+
+
     return (
     <div className="App">
       <header className="App-header">
@@ -21,7 +27,7 @@ function App() {
       </header>
 
      <main>
-      <WordForm />
+      <WordForm addWord = {addWord} />
       <CardsContainer words={words} />
     </main>
     </div>
